@@ -51,7 +51,7 @@ function atualizaMediaFinal() {
 
     const media = calculaMediaFinal();
 
-    document.getElementById(`footer-nota`).innerHTML = media;
+    document.getElementById(`footer-nota`).innerHTML = media.toFixed(2);
     document.getElementById(`footer-res`).innerHTML = media >= notaMinima ? spanAprovado : spanReprovado;
 
 }
